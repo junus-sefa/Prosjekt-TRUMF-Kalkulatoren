@@ -1,0 +1,253 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;600;700&family=Raleway:wght@400;600&display=swap');
+.container {
+  max-width: 960px;
+}
+
+
+/*
+ * Custom translucent site header
+ */
+
+.site-header {
+  background-color: rgba(0, 0, 0, .85);
+  -webkit-backdrop-filter: saturate(180%) blur(20px);
+  backdrop-filter: saturate(180%) blur(20px);
+}
+.site-header a {
+  color: #999;
+  transition: ease-in-out color .15s;
+}
+.site-header a:hover {
+  color: #fff;
+  text-decoration: none;
+}
+
+/*
+ * Dummy devices (replace them with your own or something else entirely!)
+ */
+
+.product-device {
+  position: absolute;
+  right: 10%;
+  bottom: -30%;
+  width: 300px;
+  height: 540px;
+  background-color: #333;
+  border-radius: 21px;
+  -webkit-transform: rotate(30deg);
+  transform: rotate(30deg);
+}
+
+.product-device::before {
+  position: absolute;
+  top: 10%;
+  right: 10px;
+  bottom: 10%;
+  left: 10px;
+  content: "";
+  background-color: rgba(255, 255, 255, .1);
+  border-radius: 5px;
+}
+
+.product-device-2 {
+  top: -25%;
+  right: auto;
+  bottom: 0;
+  left: 5%;
+  background-color: #e5e5e5;
+}
+
+
+/*
+ * Extra utilities
+ */
+
+.flex-equal > * {
+  -ms-flex: 1;
+  flex: 1;
+}
+@media (min-width: 768px) {
+  .flex-md-equal > * {
+    -ms-flex: 1;
+    flex: 1;
+  }
+}
+
+.overflow-hidden { overflow: hidden; }
+
+
+.bg-secondary-color{
+  background-color: #0176DF;
+}
+
+
+h1, h2, h3, h4, h5, h6 {
+  margin-top: 0;
+  margin-bottom: 2rem;
+  font-weight: 300; 
+  font-family: 'Josefin Sans', sans-serif;}
+
+
+h1.display-4{
+  font-weight: 700;
+}
+
+button.btn,a.btn{
+  font-family: "Raleway", "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-weight: 400;
+  letter-spacing: 1.5px;
+}
+
+ul li{
+  list-style: none;
+  padding-bottom:25px;
+  line-height: 1.2;
+}
+
+label{
+  font-family: "Raleway", "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-weight: 600;
+}
+
+input{
+  font-family: 'Josefin Sans', sans-serif;
+  font-weight: 400;
+}
+
+
+select{
+  margin-top:20px;
+  font-family: 'Josefin Sans', sans-serif;
+  font-weight: 400;
+  font-size: 30px!important;
+  width: 100%;
+}
+.select2-container--default .select2-selection--single{
+  padding:15px;
+}
+.select2-container .select2-selection--single{
+  height:auto!important;
+}
+.select2-container--default .select2-selection--single:focus{
+  outline:0!important;
+}
+
+.button:focus,
+button:focus,
+.form-control:focus,
+input,
+input[type="submit"]:focus,
+input[type="reset"]:focus,
+input[type="button"]:focus {
+  outline: 0!important; 
+  border:0!important;
+  box-shadow: none!important;
+}
+
+.input_box input{
+ padding: 6px 10px;
+ font-size: 40px;
+ text-align:center; 
+ padding-right: 0;
+ border:1px solid #ced4da!important;
+}
+.input_box input:focus{
+  border:1px solid #ced4da!important;
+}
+.input_box input{
+  transition: none!important;
+}
+
+.input_box .input-group-text{
+  background-color: transparent;
+}
+
+.input_box .form-control[readonly]{
+  background-color: transparent;
+}
+
+.knapp_stil{
+  background-color: #0f233d;
+  color:#fff;
+  border:0;
+  text-transform: uppercase;
+  font-size: 11px;
+  padding: 20px 35px;
+  transition: .2s;
+}
+
+.knapp_stil:hover{
+  background-color: #000;
+  color:#fff;
+}
+
+@media (min-width: 550px){
+  .comment.pc{
+    display: none;
+  }
+  .comment.phone{
+    display: block;
+  }
+}@media (min-width: 1000px)  {
+  .comment.pc{
+    display: block;
+  }
+  .comment.phone{
+    display: none;
+  }
+}
+
+
+.comment{
+  font-family: 'Josefin Sans', sans-serif;
+  font-weight: 600;
+}
+.comment.pc{
+  position: absolute;
+  top:5%;
+  right:5%;
+  padding:20px;
+  background-color: #0176DF;
+  color:#fff;
+}
+.comment.phone{
+  padding:15px;
+  background-color: #0176DF;
+  color:#fff;
+}
+
+.image{
+  max-width: 100%;
+}
+
+.main_banner{
+  max-width: 100%;
+  display: block;
+}
+
+.hide{
+  display: none;
+}
+
+.undertittel{
+  margin-top:90px;
+}
+
+.logo{
+  max-width: 150px;
+}
+
+.btn-group{
+  border-radius: .25rem;
+}
+
+
+.btn-group .btn{
+  border: 1px solid #ced4da;
+}
+
+.btn-group>.btn.active{
+  background-color: #0176DF;
+  color:#fff;
+  border-color:#0176DF;
+}

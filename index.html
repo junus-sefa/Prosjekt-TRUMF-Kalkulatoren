@@ -1,0 +1,102 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
+    <meta name="generator" content="Jekyll v4.1.1">
+    <title>Trumf Kalkulatoren</title>
+    <link rel="icon" type="image/png" href="images/favicon.svg">
+
+
+    <!-- Bootstrap core CSS -->
+    <link href="assets/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/select2@4.1.0-beta.1/dist/css/select2.min.css" rel="stylesheet" />
+
+
+    <style>
+      .bd-placeholder-img {
+        font-size: 1.125rem;
+        text-anchor: middle;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        -ms-user-select: none;
+        user-select: none;
+      }
+
+      @media (min-width: 768px) {
+        .bd-placeholder-img-lg {
+          font-size: 3.5rem;
+        }
+      }
+    </style>
+    <!-- Custom styles for this template -->
+    <link href="product.css" rel="stylesheet">
+  </head>
+  <body>
+    <p class="comment phone text_center">Fyll ut alle feltene</p>
+    <p class="comment pc text_center">Fyll ut alle feltene</p>
+
+  <div class="position-relative overflow-hidden p-3 mt-5 mb-5 text-center">
+
+  <div class="col-md-7 p-lg-4 mx-auto" style="padding-bottom: 0!important;">
+      <img class="logo mb-5" src="images/logo.png">
+      <h1 class="display-4 font-weight-normal">Trumf Kalkulatoren</h1>
+    </div>
+    <div class="col-md-3 mx-auto ">
+      <div class="container mb-5">
+        <div class="row mt-5 kategori_boks">
+          <div class="col-sm">
+            <label for="Kategori">Søk på et firma </label>
+            <div id="velg_bedrift" class="form-group input_box">
+            </div>
+          </div>
+        </div>
+        <div class="row mt-5 bruk_i_mnd_input hide">
+          <div class="col-sm">
+            <img id="bedrift_bilde" class="image pb-5" src="">
+            <label for="Forbruk i måneden med trumf"><span class="bedrift"></span></label>
+            <div class="input-group input_box">
+              <input type="text" class="form-control input_box" name="forbruk_i_mnd" id="forbruk_i_mnd" aria-label="Forbruk i måneden"  placeholder="0">
+              <span id="etter_nummer" class="input-group-text"></span>
+            </div>
+          </div>
+          </div>
+        </div>
+      </div>
+      <button id="kjør_kalkulator" class="hide btn knapp_stil" href="#">Se hva du tjener!</button>
+    </div>
+  </div>
+
+  <div id="informasjons_boks" class="hide bg-secondary-color position-relative overflow-hidden pt-3 pb-5 mt-5 text-center">
+
+    <div class="col-md-7 p-lg-5 mx-auto text-light">
+      <div class="my-3 py-3">
+        <h2 class="display-5">Se hva du får i Trumf Bonus!</h2>
+        <img id="bedrift_bilde_forklaring" class="image pb-5" src="">
+        <p id="kjørTekst"></p>
+      </div>
+
+      <button id="prøv_igjen" class="btn knapp_stil" href="#">Sjekk andre bedrifter</button>
+    </div>
+    
+  </div>
+  
+
+  <footer class="container py-5 hide">
+    <div class="row">
+      <div class="col-12 col-md">
+        <a href="https://diestus.com" target="_blank"><small class="d-block mb-3 text-muted">&copy; 2021 Diestus</small></a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/select2@4.1.0-beta.1/dist/js/select2.min.js"></script>
+  <script src="kalkulator.js"></script>
+
+
+
+</body>
+</html>
